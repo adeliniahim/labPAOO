@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/jucator.dir/src/main.cpp.o -o jucator 

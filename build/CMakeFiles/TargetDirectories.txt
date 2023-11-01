@@ -1,0 +1,3 @@
+/home/adelin/paoo/build/CMakeFiles/jucator.dir
+/home/adelin/paoo/build/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/CMakeFiles/rebuild_cache.dir
