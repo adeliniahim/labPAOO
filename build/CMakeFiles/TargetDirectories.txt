@@ -1,3 +1,6 @@
-/home/adelin/paoo/build/CMakeFiles/jucator.dir
+/home/adelin/paoo/build/CMakeFiles/proiect.dir
 /home/adelin/paoo/build/CMakeFiles/edit_cache.dir
 /home/adelin/paoo/build/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/Jucator/CMakeFiles/JucatorLib.dir
+/home/adelin/paoo/build/Jucator/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/Jucator/CMakeFiles/rebuild_cache.dir

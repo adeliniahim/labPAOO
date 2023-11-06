@@ -1,0 +1,1 @@
+add_library(JucatorLib jucator.cpp jucator.hpp)
