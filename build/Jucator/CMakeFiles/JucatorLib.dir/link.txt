@@ -1,0 +1,2 @@
+/usr/bin/ar qc libJucatorLib.a CMakeFiles/JucatorLib.dir/jucator.cpp.o
+/usr/bin/ranlib libJucatorLib.a

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27.7)
-project(jucator)
+project(proiect)
 
 # Specify the required C++ standard
 if(CMAKE_VERSION GREATER "3.1.2") 
@@ -11,5 +11,14 @@ else()
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
     endif()    
 endif()    
-   
-add_executable(jucator src/main.cpp) 
+
+
+
+add_subdirectory(Jucator)
+
+# Define the executable
+add_executable(proiect main.cpp)   
+
+target_link_libraries(proiect PRIVATE JucatorLib)
+
+target_include_directories(proiect PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Jucator")
