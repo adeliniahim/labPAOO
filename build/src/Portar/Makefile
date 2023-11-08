@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles /home/adelin/paoo/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles /home/adelin/paoo/build/src/Portar//CMakeFiles/progress.marks
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named proiect
+# Convenience name for target.
+src/Portar/CMakeFiles/PortarLibrary.dir/rule:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/CMakeFiles/PortarLibrary.dir/rule
+.PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/rule
 
-# Build rule for target.
-proiect: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proiect
-.PHONY : proiect
-
-# fast build rule for target.
-proiect/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/build
-.PHONY : proiect/fast
-
-#=============================================================================
-# Target rules for targets named JucatorLibrary
-
-# Build rule for target.
-JucatorLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JucatorLibrary
-.PHONY : JucatorLibrary
-
-# fast build rule for target.
-JucatorLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/build
-.PHONY : JucatorLibrary/fast
-
-#=============================================================================
-# Target rules for targets named PortarLibrary
-
-# Build rule for target.
-PortarLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PortarLibrary
+# Convenience name for target.
+PortarLibrary: src/Portar/CMakeFiles/PortarLibrary.dir/rule
 .PHONY : PortarLibrary
 
 # fast build rule for target.
 PortarLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
 .PHONY : PortarLibrary/fast
+
+Portar.o: Portar.cpp.o
+.PHONY : Portar.o
+
+# target to build an object file
+Portar.cpp.o:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/Portar.cpp.o
+.PHONY : Portar.cpp.o
+
+Portar.i: Portar.cpp.i
+.PHONY : Portar.i
+
+# target to preprocess a source file
+Portar.cpp.i:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/Portar.cpp.i
+.PHONY : Portar.cpp.i
+
+Portar.s: Portar.cpp.s
+.PHONY : Portar.s
+
+# target to generate assembly for a file
+Portar.cpp.s:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/Portar.cpp.s
+.PHONY : Portar.cpp.s
 
 # Help Target
 help:
@@ -163,9 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... JucatorLibrary"
 	@echo "... PortarLibrary"
-	@echo "... proiect"
+	@echo "... Portar.o"
+	@echo "... Portar.i"
+	@echo "... Portar.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

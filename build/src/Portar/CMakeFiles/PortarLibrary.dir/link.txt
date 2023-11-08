@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPortarLibrary.a CMakeFiles/PortarLibrary.dir/Portar.cpp.o
+/usr/bin/ranlib libPortarLibrary.a

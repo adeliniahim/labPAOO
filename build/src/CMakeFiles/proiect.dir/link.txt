@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/proiect.dir/main.cpp.o -o ../proiect  Jucator/libJucatorLibrary.a Portar/libPortarLibrary.a 

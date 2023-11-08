@@ -216,15 +216,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-jucator_BINARY_DIR:STATIC=/home/adelin/paoo/build
-
-//Value Computed by CMake
-jucator_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-jucator_SOURCE_DIR:STATIC=/home/adelin/paoo
-
-//Value Computed by CMake
 proiect_BINARY_DIR:STATIC=/home/adelin/paoo/build
 
 //Value Computed by CMake
@@ -340,7 +331,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
