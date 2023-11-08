@@ -1,0 +1,2 @@
+/usr/bin/ar qc libJucatorLibrary.a CMakeFiles/JucatorLibrary.dir/JucatorFotbal.cpp.o
+/usr/bin/ranlib libJucatorLibrary.a

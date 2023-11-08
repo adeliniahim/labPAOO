@@ -63,85 +63,145 @@ CMAKE_BINARY_DIR = /home/adelin/paoo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/proiect.dir/all
-all: Jucator/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Jucator/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/proiect.dir/clean
-clean: Jucator/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory Jucator
+# Directory level rules for directory src
 
 # Recursive "all" directory target.
-Jucator/all: Jucator/CMakeFiles/JucatorLib.dir/all
-.PHONY : Jucator/all
+src/all: src/CMakeFiles/proiect.dir/all
+src/all: src/Jucator/all
+src/all: src/Portar/all
+.PHONY : src/all
 
 # Recursive "preinstall" directory target.
-Jucator/preinstall:
-.PHONY : Jucator/preinstall
+src/preinstall: src/Jucator/preinstall
+src/preinstall: src/Portar/preinstall
+.PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-Jucator/clean: Jucator/CMakeFiles/JucatorLib.dir/clean
-.PHONY : Jucator/clean
+src/clean: src/CMakeFiles/proiect.dir/clean
+src/clean: src/Jucator/clean
+src/clean: src/Portar/clean
+.PHONY : src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/proiect.dir
+# Directory level rules for directory src/Jucator
+
+# Recursive "all" directory target.
+src/Jucator/all: src/Jucator/CMakeFiles/JucatorLibrary.dir/all
+.PHONY : src/Jucator/all
+
+# Recursive "preinstall" directory target.
+src/Jucator/preinstall:
+.PHONY : src/Jucator/preinstall
+
+# Recursive "clean" directory target.
+src/Jucator/clean: src/Jucator/CMakeFiles/JucatorLibrary.dir/clean
+.PHONY : src/Jucator/clean
+
+#=============================================================================
+# Directory level rules for directory src/Portar
+
+# Recursive "all" directory target.
+src/Portar/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
+.PHONY : src/Portar/all
+
+# Recursive "preinstall" directory target.
+src/Portar/preinstall:
+.PHONY : src/Portar/preinstall
+
+# Recursive "clean" directory target.
+src/Portar/clean: src/Portar/CMakeFiles/PortarLibrary.dir/clean
+.PHONY : src/Portar/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/proiect.dir
 
 # All Build rule for target.
-CMakeFiles/proiect.dir/all: Jucator/CMakeFiles/JucatorLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proiect.dir/build.make CMakeFiles/proiect.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proiect.dir/build.make CMakeFiles/proiect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=3,4 "Built target proiect"
-.PHONY : CMakeFiles/proiect.dir/all
+src/CMakeFiles/proiect.dir/all: src/Jucator/CMakeFiles/JucatorLibrary.dir/all
+src/CMakeFiles/proiect.dir/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=5,6 "Built target proiect"
+.PHONY : src/CMakeFiles/proiect.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/proiect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proiect.dir/all
+src/CMakeFiles/proiect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/proiect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
-.PHONY : CMakeFiles/proiect.dir/rule
+.PHONY : src/CMakeFiles/proiect.dir/rule
 
 # Convenience name for target.
-proiect: CMakeFiles/proiect.dir/rule
+proiect: src/CMakeFiles/proiect.dir/rule
 .PHONY : proiect
 
 # clean rule for target.
-CMakeFiles/proiect.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proiect.dir/build.make CMakeFiles/proiect.dir/clean
-.PHONY : CMakeFiles/proiect.dir/clean
+src/CMakeFiles/proiect.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/clean
+.PHONY : src/CMakeFiles/proiect.dir/clean
 
 #=============================================================================
-# Target rules for target Jucator/CMakeFiles/JucatorLib.dir
+# Target rules for target src/Jucator/CMakeFiles/JucatorLibrary.dir
 
 # All Build rule for target.
-Jucator/CMakeFiles/JucatorLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f Jucator/CMakeFiles/JucatorLib.dir/build.make Jucator/CMakeFiles/JucatorLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f Jucator/CMakeFiles/JucatorLib.dir/build.make Jucator/CMakeFiles/JucatorLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=1,2 "Built target JucatorLib"
-.PHONY : Jucator/CMakeFiles/JucatorLib.dir/all
+src/Jucator/CMakeFiles/JucatorLibrary.dir/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=1,2 "Built target JucatorLibrary"
+.PHONY : src/Jucator/CMakeFiles/JucatorLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-Jucator/CMakeFiles/JucatorLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Jucator/CMakeFiles/JucatorLib.dir/all
+src/Jucator/CMakeFiles/JucatorLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/CMakeFiles/JucatorLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
-.PHONY : Jucator/CMakeFiles/JucatorLib.dir/rule
+.PHONY : src/Jucator/CMakeFiles/JucatorLibrary.dir/rule
 
 # Convenience name for target.
-JucatorLib: Jucator/CMakeFiles/JucatorLib.dir/rule
-.PHONY : JucatorLib
+JucatorLibrary: src/Jucator/CMakeFiles/JucatorLibrary.dir/rule
+.PHONY : JucatorLibrary
 
 # clean rule for target.
-Jucator/CMakeFiles/JucatorLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Jucator/CMakeFiles/JucatorLib.dir/build.make Jucator/CMakeFiles/JucatorLib.dir/clean
-.PHONY : Jucator/CMakeFiles/JucatorLib.dir/clean
+src/Jucator/CMakeFiles/JucatorLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/clean
+.PHONY : src/Jucator/CMakeFiles/JucatorLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Portar/CMakeFiles/PortarLibrary.dir
+
+# All Build rule for target.
+src/Portar/CMakeFiles/PortarLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=3,4 "Built target PortarLibrary"
+.PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Portar/CMakeFiles/PortarLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Portar/CMakeFiles/PortarLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
+.PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/rule
+
+# Convenience name for target.
+PortarLibrary: src/Portar/CMakeFiles/PortarLibrary.dir/rule
+.PHONY : PortarLibrary
+
+# clean rule for target.
+src/Portar/CMakeFiles/PortarLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/clean
+.PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

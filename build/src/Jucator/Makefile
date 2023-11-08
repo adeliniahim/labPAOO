@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles /home/adelin/paoo/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles /home/adelin/paoo/build/src/Jucator//CMakeFiles/progress.marks
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named proiect
+# Convenience name for target.
+src/Jucator/CMakeFiles/JucatorLibrary.dir/rule:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Jucator/CMakeFiles/JucatorLibrary.dir/rule
+.PHONY : src/Jucator/CMakeFiles/JucatorLibrary.dir/rule
 
-# Build rule for target.
-proiect: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proiect
-.PHONY : proiect
-
-# fast build rule for target.
-proiect/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/build
-.PHONY : proiect/fast
-
-#=============================================================================
-# Target rules for targets named JucatorLibrary
-
-# Build rule for target.
-JucatorLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JucatorLibrary
+# Convenience name for target.
+JucatorLibrary: src/Jucator/CMakeFiles/JucatorLibrary.dir/rule
 .PHONY : JucatorLibrary
 
 # fast build rule for target.
 JucatorLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/build
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/build
 .PHONY : JucatorLibrary/fast
 
-#=============================================================================
-# Target rules for targets named PortarLibrary
+JucatorFotbal.o: JucatorFotbal.cpp.o
+.PHONY : JucatorFotbal.o
 
-# Build rule for target.
-PortarLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PortarLibrary
-.PHONY : PortarLibrary
+# target to build an object file
+JucatorFotbal.cpp.o:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/JucatorFotbal.cpp.o
+.PHONY : JucatorFotbal.cpp.o
 
-# fast build rule for target.
-PortarLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
-.PHONY : PortarLibrary/fast
+JucatorFotbal.i: JucatorFotbal.cpp.i
+.PHONY : JucatorFotbal.i
+
+# target to preprocess a source file
+JucatorFotbal.cpp.i:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/JucatorFotbal.cpp.i
+.PHONY : JucatorFotbal.cpp.i
+
+JucatorFotbal.s: JucatorFotbal.cpp.s
+.PHONY : JucatorFotbal.s
+
+# target to generate assembly for a file
+JucatorFotbal.cpp.s:
+	cd /home/adelin/paoo/build && $(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/JucatorFotbal.cpp.s
+.PHONY : JucatorFotbal.cpp.s
 
 # Help Target
 help:
@@ -164,8 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... JucatorLibrary"
-	@echo "... PortarLibrary"
-	@echo "... proiect"
+	@echo "... JucatorFotbal.o"
+	@echo "... JucatorFotbal.i"
+	@echo "... JucatorFotbal.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/adelin/paoo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

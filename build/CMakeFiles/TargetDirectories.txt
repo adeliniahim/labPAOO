@@ -1,6 +1,11 @@
-/home/adelin/paoo/build/CMakeFiles/proiect.dir
 /home/adelin/paoo/build/CMakeFiles/edit_cache.dir
 /home/adelin/paoo/build/CMakeFiles/rebuild_cache.dir
-/home/adelin/paoo/build/Jucator/CMakeFiles/JucatorLib.dir
-/home/adelin/paoo/build/Jucator/CMakeFiles/edit_cache.dir
-/home/adelin/paoo/build/Jucator/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/src/CMakeFiles/proiect.dir
+/home/adelin/paoo/build/src/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/src/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/src/Jucator/CMakeFiles/JucatorLibrary.dir
+/home/adelin/paoo/build/src/Jucator/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/src/Jucator/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/src/Portar/CMakeFiles/PortarLibrary.dir
+/home/adelin/paoo/build/src/Portar/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/src/Portar/CMakeFiles/rebuild_cache.dir
