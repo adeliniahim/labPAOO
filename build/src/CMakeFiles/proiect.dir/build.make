@@ -94,6 +94,10 @@ proiect: src/CMakeFiles/proiect.dir/main.cpp.o
 proiect: src/CMakeFiles/proiect.dir/build.make
 proiect: src/Jucator/libJucatorLibrary.a
 proiect: src/Portar/libPortarLibrary.a
+proiect: src/Istoric/libIstoricLibrary.a
+proiect: src/Echipa/libEchipaLibrary.a
+proiect: src/Jucator/libJucatorLibrary.a
+proiect: src/Portar/libPortarLibrary.a
 proiect: src/CMakeFiles/proiect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../proiect"
 	cd /home/adelin/paoo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proiect.dir/link.txt --verbose=$(VERBOSE)

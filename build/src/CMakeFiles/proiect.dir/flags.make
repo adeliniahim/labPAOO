@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/adelin/paoo/src/Jucator -I/home/adelin/paoo/src/Portar -I/home/adelin/paoo/src/Jucator/../Portar
+CXX_INCLUDES = -I/home/adelin/paoo/src/Jucator -I/home/adelin/paoo/src/Portar -I/home/adelin/paoo/src/Istoric -I/home/adelin/paoo/src/Echipa -I/home/adelin/paoo/src/Jucator/../Portar -I/home/adelin/paoo/src/Istoric/../Jucator -I/home/adelin/paoo/src/Istoric/../Portar
 
 CXX_FLAGS = 
 

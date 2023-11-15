@@ -7,12 +7,15 @@ using namespace std;
 namespace Fotbal
 {
     class JucatorFotbal : public Portar{
-        private:
+        protected:
             char* nume;
             int varsta;
             char* pozitieJoc;
             
         public:
+            //default constructor 
+            JucatorFotbal();
+            
             // constructor
             JucatorFotbal(const char* nume, int varsta, const char* pozitieJoc);
 
@@ -29,7 +32,7 @@ namespace Fotbal
             JucatorFotbal(JucatorFotbal&& jucator);
 
             // afisare
-            void Afisare() const;
+            void Afisare();
 
             // metoda virtuale
             void estePortar() override;

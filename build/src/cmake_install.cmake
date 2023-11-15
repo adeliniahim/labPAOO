@@ -52,3 +52,13 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/adelin/paoo/build/src/Portar/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/adelin/paoo/build/src/Istoric/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/adelin/paoo/build/src/Echipa/cmake_install.cmake")
+endif()
+

@@ -155,6 +155,32 @@ PortarLibrary/fast:
 	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
 .PHONY : PortarLibrary/fast
 
+#=============================================================================
+# Target rules for targets named IstoricLibrary
+
+# Build rule for target.
+IstoricLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IstoricLibrary
+.PHONY : IstoricLibrary
+
+# fast build rule for target.
+IstoricLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Istoric/CMakeFiles/IstoricLibrary.dir/build.make src/Istoric/CMakeFiles/IstoricLibrary.dir/build
+.PHONY : IstoricLibrary/fast
+
+#=============================================================================
+# Target rules for targets named EchipaLibrary
+
+# Build rule for target.
+EchipaLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EchipaLibrary
+.PHONY : EchipaLibrary
+
+# fast build rule for target.
+EchipaLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Echipa/CMakeFiles/EchipaLibrary.dir/build.make src/Echipa/CMakeFiles/EchipaLibrary.dir/build
+.PHONY : EchipaLibrary/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,6 +189,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... EchipaLibrary"
+	@echo "... IstoricLibrary"
 	@echo "... JucatorLibrary"
 	@echo "... PortarLibrary"
 	@echo "... proiect"
