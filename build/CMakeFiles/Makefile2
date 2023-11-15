@@ -81,18 +81,54 @@ clean: src/clean
 src/all: src/CMakeFiles/proiect.dir/all
 src/all: src/Jucator/all
 src/all: src/Portar/all
+src/all: src/Istoric/all
+src/all: src/Echipa/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/Jucator/preinstall
 src/preinstall: src/Portar/preinstall
+src/preinstall: src/Istoric/preinstall
+src/preinstall: src/Echipa/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/proiect.dir/clean
 src/clean: src/Jucator/clean
 src/clean: src/Portar/clean
+src/clean: src/Istoric/clean
+src/clean: src/Echipa/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/Echipa
+
+# Recursive "all" directory target.
+src/Echipa/all: src/Echipa/CMakeFiles/EchipaLibrary.dir/all
+.PHONY : src/Echipa/all
+
+# Recursive "preinstall" directory target.
+src/Echipa/preinstall:
+.PHONY : src/Echipa/preinstall
+
+# Recursive "clean" directory target.
+src/Echipa/clean: src/Echipa/CMakeFiles/EchipaLibrary.dir/clean
+.PHONY : src/Echipa/clean
+
+#=============================================================================
+# Directory level rules for directory src/Istoric
+
+# Recursive "all" directory target.
+src/Istoric/all: src/Istoric/CMakeFiles/IstoricLibrary.dir/all
+.PHONY : src/Istoric/all
+
+# Recursive "preinstall" directory target.
+src/Istoric/preinstall:
+.PHONY : src/Istoric/preinstall
+
+# Recursive "clean" directory target.
+src/Istoric/clean: src/Istoric/CMakeFiles/IstoricLibrary.dir/clean
+.PHONY : src/Istoric/clean
 
 #=============================================================================
 # Directory level rules for directory src/Jucator
@@ -130,14 +166,16 @@ src/Portar/clean: src/Portar/CMakeFiles/PortarLibrary.dir/clean
 # All Build rule for target.
 src/CMakeFiles/proiect.dir/all: src/Jucator/CMakeFiles/JucatorLibrary.dir/all
 src/CMakeFiles/proiect.dir/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
+src/CMakeFiles/proiect.dir/all: src/Istoric/CMakeFiles/IstoricLibrary.dir/all
+src/CMakeFiles/proiect.dir/all: src/Echipa/CMakeFiles/EchipaLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/proiect.dir/build.make src/CMakeFiles/proiect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=5,6 "Built target proiect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=9,10 "Built target proiect"
 .PHONY : src/CMakeFiles/proiect.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/proiect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/proiect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/proiect.dir/rule
@@ -158,7 +196,7 @@ src/CMakeFiles/proiect.dir/clean:
 src/Jucator/CMakeFiles/JucatorLibrary.dir/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/Jucator/CMakeFiles/JucatorLibrary.dir/build.make src/Jucator/CMakeFiles/JucatorLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=1,2 "Built target JucatorLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=5,6 "Built target JucatorLibrary"
 .PHONY : src/Jucator/CMakeFiles/JucatorLibrary.dir/all
 
 # Build rule for subdir invocation for target.
@@ -184,7 +222,7 @@ src/Jucator/CMakeFiles/JucatorLibrary.dir/clean:
 src/Portar/CMakeFiles/PortarLibrary.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=3,4 "Built target PortarLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=7,8 "Built target PortarLibrary"
 .PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/all
 
 # Build rule for subdir invocation for target.
@@ -202,6 +240,59 @@ PortarLibrary: src/Portar/CMakeFiles/PortarLibrary.dir/rule
 src/Portar/CMakeFiles/PortarLibrary.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/Portar/CMakeFiles/PortarLibrary.dir/build.make src/Portar/CMakeFiles/PortarLibrary.dir/clean
 .PHONY : src/Portar/CMakeFiles/PortarLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Istoric/CMakeFiles/IstoricLibrary.dir
+
+# All Build rule for target.
+src/Istoric/CMakeFiles/IstoricLibrary.dir/all: src/Jucator/CMakeFiles/JucatorLibrary.dir/all
+src/Istoric/CMakeFiles/IstoricLibrary.dir/all: src/Portar/CMakeFiles/PortarLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Istoric/CMakeFiles/IstoricLibrary.dir/build.make src/Istoric/CMakeFiles/IstoricLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Istoric/CMakeFiles/IstoricLibrary.dir/build.make src/Istoric/CMakeFiles/IstoricLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=3,4 "Built target IstoricLibrary"
+.PHONY : src/Istoric/CMakeFiles/IstoricLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Istoric/CMakeFiles/IstoricLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Istoric/CMakeFiles/IstoricLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
+.PHONY : src/Istoric/CMakeFiles/IstoricLibrary.dir/rule
+
+# Convenience name for target.
+IstoricLibrary: src/Istoric/CMakeFiles/IstoricLibrary.dir/rule
+.PHONY : IstoricLibrary
+
+# clean rule for target.
+src/Istoric/CMakeFiles/IstoricLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Istoric/CMakeFiles/IstoricLibrary.dir/build.make src/Istoric/CMakeFiles/IstoricLibrary.dir/clean
+.PHONY : src/Istoric/CMakeFiles/IstoricLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Echipa/CMakeFiles/EchipaLibrary.dir
+
+# All Build rule for target.
+src/Echipa/CMakeFiles/EchipaLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Echipa/CMakeFiles/EchipaLibrary.dir/build.make src/Echipa/CMakeFiles/EchipaLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Echipa/CMakeFiles/EchipaLibrary.dir/build.make src/Echipa/CMakeFiles/EchipaLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelin/paoo/build/CMakeFiles --progress-num=1,2 "Built target EchipaLibrary"
+.PHONY : src/Echipa/CMakeFiles/EchipaLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Echipa/CMakeFiles/EchipaLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Echipa/CMakeFiles/EchipaLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelin/paoo/build/CMakeFiles 0
+.PHONY : src/Echipa/CMakeFiles/EchipaLibrary.dir/rule
+
+# Convenience name for target.
+EchipaLibrary: src/Echipa/CMakeFiles/EchipaLibrary.dir/rule
+.PHONY : EchipaLibrary
+
+# clean rule for target.
+src/Echipa/CMakeFiles/EchipaLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Echipa/CMakeFiles/EchipaLibrary.dir/build.make src/Echipa/CMakeFiles/EchipaLibrary.dir/clean
+.PHONY : src/Echipa/CMakeFiles/EchipaLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

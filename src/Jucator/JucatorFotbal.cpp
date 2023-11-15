@@ -5,6 +5,13 @@ using namespace std;
 
 namespace Fotbal{
 
+    //Default constructor
+    JucatorFotbal::JucatorFotbal(){
+        this->nume = nullptr;
+        this->varsta = 0;
+        this->pozitieJoc = nullptr;
+    }
+    
     // Constructorul
     JucatorFotbal::JucatorFotbal(const char* nume, int varsta, const char* pozitieJoc) {
         this->nume = new char[strlen(nume) + 1];
@@ -65,7 +72,7 @@ namespace Fotbal{
     }
 
     // Metodă pentru afișare
-    void JucatorFotbal::Afisare() const {
+    void JucatorFotbal::Afisare() {
         cout << "Nume: " << nume << ",\nVarsta: " << varsta << ",\nPozitie joc: " << pozitieJoc << endl;
         cout << endl; 
     }

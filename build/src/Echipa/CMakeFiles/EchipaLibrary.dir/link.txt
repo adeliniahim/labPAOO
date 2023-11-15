@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEchipaLibrary.a CMakeFiles/EchipaLibrary.dir/Echipa.cpp.o
+/usr/bin/ranlib libEchipaLibrary.a

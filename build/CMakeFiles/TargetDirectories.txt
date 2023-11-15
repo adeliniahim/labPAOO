@@ -9,3 +9,9 @@
 /home/adelin/paoo/build/src/Portar/CMakeFiles/PortarLibrary.dir
 /home/adelin/paoo/build/src/Portar/CMakeFiles/edit_cache.dir
 /home/adelin/paoo/build/src/Portar/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/src/Istoric/CMakeFiles/IstoricLibrary.dir
+/home/adelin/paoo/build/src/Istoric/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/src/Istoric/CMakeFiles/rebuild_cache.dir
+/home/adelin/paoo/build/src/Echipa/CMakeFiles/EchipaLibrary.dir
+/home/adelin/paoo/build/src/Echipa/CMakeFiles/edit_cache.dir
+/home/adelin/paoo/build/src/Echipa/CMakeFiles/rebuild_cache.dir

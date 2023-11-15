@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeSystem.cmake"
   "/home/adelin/paoo/src/CMakeLists.txt"
+  "/home/adelin/paoo/src/Echipa/CMakeLists.txt"
+  "/home/adelin/paoo/src/Istoric/CMakeLists.txt"
   "/home/adelin/paoo/src/Jucator/CMakeLists.txt"
   "/home/adelin/paoo/src/Portar/CMakeLists.txt"
   "/snap/cmake/1336/share/cmake-3.27/Modules/CMakeCInformation.cmake"
@@ -46,6 +48,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Jucator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Portar/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Istoric/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Echipa/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -53,4 +57,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/proiect.dir/DependInfo.cmake"
   "src/Jucator/CMakeFiles/JucatorLibrary.dir/DependInfo.cmake"
   "src/Portar/CMakeFiles/PortarLibrary.dir/DependInfo.cmake"
+  "src/Istoric/CMakeFiles/IstoricLibrary.dir/DependInfo.cmake"
+  "src/Echipa/CMakeFiles/EchipaLibrary.dir/DependInfo.cmake"
   )

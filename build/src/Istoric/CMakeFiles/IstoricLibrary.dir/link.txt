@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIstoricLibrary.a CMakeFiles/IstoricLibrary.dir/Istoric.cpp.o
+/usr/bin/ranlib libIstoricLibrary.a
