@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "../Jucator/JucatorFotbal.hpp"
-#include "../Portar/Portar.hpp"
+#include "Portar/Portar.hpp"
 
 using namespace std;
 
